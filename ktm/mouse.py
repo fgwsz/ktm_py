@@ -66,4 +66,13 @@ class Mouse:
 
     @staticmethod
     def dpixel_halve():
-        Mouse.current_dpixel_=Mouse.current_dpixel_/2
+        if Mouse.current_dpixel_>1:
+            Mouse.current_dpixel_=int(Mouse.current_dpixel_/2)
+
+    @staticmethod
+    def wheel_up():
+        pyautogui.scroll(Mouse.current_dpixel_)
+
+    @staticmethod
+    def wheel_down():
+        pyautogui.scroll(-Mouse.current_dpixel_)

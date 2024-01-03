@@ -2,121 +2,135 @@ from keyname import KeyName
 
 _keycode_to_name=[
     "\\0","\\1","\\2","\\3","\\4","\\5","\\6","\\7",
-    KeyName.KeyName_Backspace.value         ,#8
-    KeyName.KeyName_Tab.value               ,#9
+    KeyName._Backspace         ,#8
+    KeyName._Tab               ,#9
     "\\10","\\11","\\12",
-    KeyName.KeyName_Enter.value             ,#13
+    KeyName._Enter             ,#13
     "\\14","\\15","\\16","\\17","\\18",
-    KeyName.KeyName_PauseBreak.value        ,#19
-    KeyName.KeyName_CapsLk.value            ,#20
+    KeyName._PauseBreak        ,#19
+    KeyName._CapsLk            ,#20
     "\\21","\\22","\\23","\\24","\\25","\\26",
-    KeyName.KeyName_Esc.value               ,#27
+    KeyName._Esc               ,#27
     "\\28","\\29",
     "\\30","\\31",
-    KeyName.KeyName_Space.value             ,#32
-    KeyName.KeyName_PageUp.value            ,#33
-    KeyName.KeyName_PageDown.value          ,#34
-    KeyName.KeyName_End.value               ,#35
-    KeyName.KeyName_Home.value              ,#36
-    KeyName.KeyName_Left.value              ,#37
-    KeyName.KeyName_Up.value                ,#38
-    KeyName.KeyName_Right.value             ,#39
-    KeyName.KeyName_Down.value              ,#40
+    KeyName._Space             ,#32
+    KeyName._PageUp            ,#33
+    KeyName._PageDown          ,#34
+    KeyName._End               ,#35
+    KeyName._Home              ,#36
+    KeyName._Left              ,#37
+    KeyName._Up                ,#38
+    KeyName._Right             ,#39
+    KeyName._Down              ,#40
     "\\41","\\42","\\43",
-    KeyName.KeyName_PrintScreen.value       ,#44
-    KeyName.KeyName_Insert.value            ,#45
-    KeyName.KeyName_Delete.value            ,#46
+    KeyName._PrintScreen       ,#44
+    KeyName._Insert            ,#45
+    KeyName._Delete            ,#46
     "\\47",
-    KeyName.KeyName_0.value                 ,#48
-    KeyName.KeyName_1.value                 ,#49
-    KeyName.KeyName_2.value                 ,#50
-    KeyName.KeyName_3.value                 ,#51
-    KeyName.KeyName_4.value                 ,#52
-    KeyName.KeyName_5.value                 ,#53
-    KeyName.KeyName_6.value                 ,#54
-    KeyName.KeyName_7.value                 ,#55
-    KeyName.KeyName_8.value                 ,#56
-    KeyName.KeyName_9.value                 ,#57
+    KeyName._0                 ,#48
+    KeyName._1                 ,#49
+    KeyName._2                 ,#50
+    KeyName._3                 ,#51
+    KeyName._4                 ,#52
+    KeyName._5                 ,#53
+    KeyName._6                 ,#54
+    KeyName._7                 ,#55
+    KeyName._8                 ,#56
+    KeyName._9                 ,#57
     "\\58","\\59","\\60","\\61","\\62","\\63","\\64",
-    KeyName.KeyName_A.value                 ,#65
-    KeyName.KeyName_B.value                 ,#66
-    KeyName.KeyName_C.value                 ,#67
-    KeyName.KeyName_D.value                 ,#68
-    KeyName.KeyName_E.value                 ,#69
-    KeyName.KeyName_F.value                 ,#70
-    KeyName.KeyName_G.value                 ,#71
-    KeyName.KeyName_H.value                 ,#72
-    KeyName.KeyName_I.value                 ,#73
-    KeyName.KeyName_J.value                 ,#74
-    KeyName.KeyName_K.value                 ,#75
-    KeyName.KeyName_L.value                 ,#76
-    KeyName.KeyName_M.value                 ,#77
-    KeyName.KeyName_N.value                 ,#78
-    KeyName.KeyName_O.value                 ,#79
-    KeyName.KeyName_P.value                 ,#80
-    KeyName.KeyName_Q.value                 ,#81
-    KeyName.KeyName_R.value                 ,#82
-    KeyName.KeyName_S.value                 ,#83
-    KeyName.KeyName_T.value                 ,#84
-    KeyName.KeyName_U.value                 ,#85
-    KeyName.KeyName_V.value                 ,#86
-    KeyName.KeyName_W.value                 ,#87
-    KeyName.KeyName_X.value                 ,#88
-    KeyName.KeyName_Y.value                 ,#89
-    KeyName.KeyName_Z.value                 ,#90
-    KeyName.KeyName_LeftWin.value           ,#91
-    KeyName.KeyName_RightWin.value          ,#92
-    KeyName.KeyName_Application.value       ,#93
+    KeyName._A                 ,#65
+    KeyName._B                 ,#66
+    KeyName._C                 ,#67
+    KeyName._D                 ,#68
+    KeyName._E                 ,#69
+    KeyName._F                 ,#70
+    KeyName._G                 ,#71
+    KeyName._H                 ,#72
+    KeyName._I                 ,#73
+    KeyName._J                 ,#74
+    KeyName._K                 ,#75
+    KeyName._L                 ,#76
+    KeyName._M                 ,#77
+    KeyName._N                 ,#78
+    KeyName._O                 ,#79
+    KeyName._P                 ,#80
+    KeyName._Q                 ,#81
+    KeyName._R                 ,#82
+    KeyName._S                 ,#83
+    KeyName._T                 ,#84
+    KeyName._U                 ,#85
+    KeyName._V                 ,#86
+    KeyName._W                 ,#87
+    KeyName._X                 ,#88
+    KeyName._Y                 ,#89
+    KeyName._Z                 ,#90
+    KeyName._LeftWin           ,#91
+    KeyName._RightWin          ,#92
+    KeyName._Application       ,#93
     "\\94","\\95","\\96","\\97","\\98","\\99",
     "\\100","\\101","\\102","\\103","\\104","\\105",
-    KeyName.KeyName_Multiply.value          ,#106# Operator*
-    KeyName.KeyName_Plus.value              ,#107# Operator+
+    KeyName._Multiply          ,#106# Operator*
+    KeyName._Plus              ,#107# Operator+
     "\\108",
-    KeyName.KeyName_Minus.value             ,#109# Operator-
+    KeyName._Minus             ,#109# Operator-
     "\\110",
-    KeyName.KeyName_Divide.value            ,#111,# Operator/
-    KeyName.KeyName_F1.value                ,#112
-    KeyName.KeyName_F2.value                ,#113
-    KeyName.KeyName_F3.value                ,#114
-    KeyName.KeyName_F4.value                ,#115
-    KeyName.KeyName_F5.value                ,#116
-    KeyName.KeyName_F6.value                ,#117
-    KeyName.KeyName_F7.value                ,#118
-    KeyName.KeyName_F8.value                ,#119
-    KeyName.KeyName_F9.value                ,#120
-    KeyName.KeyName_F10.value               ,#121
-    KeyName.KeyName_F11.value               ,#122
-    KeyName.KeyName_F12.value               ,#123
-    "\\124","\\125","\\126","\\127","\\128","\\129",
-    "\\130","\\131","\\132","\\133","\\134","\\135","\\136","\\137","\\138","\\139",
+    KeyName._Divide            ,#111,# Operator/
+    KeyName._F1                ,#112
+    KeyName._F2                ,#113
+    KeyName._F3                ,#114
+    KeyName._F4                ,#115
+    KeyName._F5                ,#116
+    KeyName._F6                ,#117
+    KeyName._F7                ,#118
+    KeyName._F8                ,#119
+    KeyName._F9                ,#120
+    KeyName._F10               ,#121
+    KeyName._F11               ,#122
+    KeyName._F12               ,#123
+    KeyName._F13               ,#124
+    KeyName._F14               ,#125
+    KeyName._F15               ,#126
+    KeyName._F16               ,#127
+    KeyName._F17               ,#128
+    KeyName._F18               ,#129
+    KeyName._F19               ,#130
+    KeyName._F20               ,#131
+    "\\132","\\133","\\134","\\135","\\136","\\137","\\138","\\139",
     "\\140","\\141","\\142","\\143",
-    KeyName.KeyName_NumLock.value           ,#144
-    KeyName.KeyName_ScrollLock.value        ,#145
+    KeyName._NumLock           ,#144
+    KeyName._ScrollLock        ,#145
     "\\146","\\147","\\148","\\149",
     "\\150","\\151","\\152","\\153","\\154","\\155","\\156","\\157","\\158","\\159",
-    KeyName.KeyName_LeftShift.value         ,#160
-    KeyName.KeyName_RightShfit.value        ,#161
-    KeyName.KeyName_LeftCtrl.value          ,#162
-    KeyName.KeyName_RightCtrl.value         ,#163
-    KeyName.KeyName_LeftAlt.value           ,#164
-    KeyName.KeyName_RightAlt.value          ,#165
+    KeyName._LeftShift         ,#160
+    KeyName._RightShfit        ,#161
+    KeyName._LeftCtrl          ,#162
+    KeyName._RightCtrl         ,#163
+    KeyName._LeftAlt           ,#164
+    KeyName._RightAlt          ,#165
     "\\166","\\167","\\168","\\169",
-    "\\170","\\171","\\172","\\173","\\174","\\175","\\176","\\177","\\178","\\179",
+    "\\170","\\171","\\172",
+    KeyName._MediaVolumeMute   ,#173
+    KeyName._MediaVolumeDown   ,#174
+    KeyName._MediaVolumeUp     ,#175
+    KeyName._MediaNextTrack    ,#176
+    KeyName._MediaPrevTrack    ,#177
+    KeyName._MediaStop         ,#178
+    KeyName._MediaPlayPause    ,#179
     "\\180","\\181","\\182","\\183","\\184","\\185",
-    KeyName.KeyName_Semicolon.value         ,#186# ;
-    KeyName.KeyName_Equal.value             ,#187# =
-    KeyName.KeyName_Comma.value             ,#188# ,
-    KeyName.KeyName_Hyphen.value            ,#189# -
-    KeyName.KeyName_Period.value            ,#190# .
-    KeyName.KeyName_Slash.value             ,#191# /
-    KeyName.KeyName_BackQuote.value         ,#192# `
+    KeyName._Semicolon         ,#186# ;
+    KeyName._Equal             ,#187# =
+    KeyName._Comma             ,#188# ,
+    KeyName._Hyphen            ,#189# -
+    KeyName._Period            ,#190# .
+    KeyName._Slash             ,#191# /
+    KeyName._BackQuote         ,#192# `
     "\\193","\\194","\\195","\\196","\\197","\\198","\\199",
     "\\200","\\201","\\202","\\203","\\204","\\205","\\206","\\207","\\208","\\209",
     "\\210","\\211","\\212","\\213","\\214","\\215","\\216","\\217","\\218",
-    KeyName.KeyName_LeftSquareBracket.value ,#219# [
-    KeyName.KeyName_VerticalBar.value       ,#220# |
-    KeyName.KeyName_RightSquareBracket.value,#221# ]
-    KeyName.KeyName_SingleQuote.value       ,#222# '
+    KeyName._LeftSquareBracket ,#219# [
+    KeyName._VerticalBar       ,#220# |
+    KeyName._RightSquareBracket,#221# ]
+    KeyName._SingleQuote       ,#222# '
     "\\223","\\224","\\225","\\226","\\227","\\228","\\229",
     "\\230","\\231","\\232","\\233","\\234","\\235","\\236","\\237","\\238","\\239",
     "\\240","\\241","\\242","\\243","\\244","\\245","\\246","\\247","\\248","\\249",
@@ -124,4 +138,5 @@ _keycode_to_name=[
 ]
 
 def keycode_to_name(key):
+    global _keycode_to_name
     return _keycode_to_name[key]
