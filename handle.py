@@ -1,3 +1,4 @@
+import sys
 from logger import Logger
 from mouse import Mouse
 from keycode_to_name import keycode_to_name
@@ -141,7 +142,7 @@ def mouse_dpixel_halve():
 def app_quit():
     global app_logger
     app_logger.println_with_head("Quit")
-    exit(0)
+    sys.exit()
 
 key_down_handle_list={
     KeyCodeOf.mouse_move_up          :mouse_move_up,
