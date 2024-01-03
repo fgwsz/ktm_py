@@ -10,6 +10,7 @@
 `python3`  
 `pynput`  
 `pyautogui`  
+`pyinstaller`  
 
 ## pyinstaller 构建
 鼠标左键双击`pyinstaller_build.ps1`构建生成可执行文件并运行。
