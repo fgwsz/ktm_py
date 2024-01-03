@@ -193,7 +193,9 @@ def on_press(keycode):
 def on_release(keycode):
     global key_down_set
     global is_leader_down
-    key_down_set.remove(keycode)
+    if keycode in key_down_set:
+        key_down_set.remove(keycode)
+
     if keycode==KeyCodeOf.leader:
         is_leader_down=False
 
