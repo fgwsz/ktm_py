@@ -5,6 +5,7 @@ if($commit_info -eq "exit"){
 }else{
     git add ./*.py
     git add .gitignore
+    git add README.md
     git add git_push.ps1
     git add pyinstaller_build.ps1
     git commit -m $commit_info
